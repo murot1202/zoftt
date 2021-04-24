@@ -1,0 +1,10 @@
+nav.nav     
+    .container 
+        img.logo(src="img/zoftlogo1.svg", alt="")
+        .nav__wrapper 
+            span.fas.fa-caret-circle-down.nav__btn
+            ul.nav__menu 
+                each val in ['Возможности', 'Шаблоны', 'Тарифы', 'Онас', 'Помощь']
+                    li 
+                        a.nav__menu-link(href="#!")= val
+        a.btnn(href="#!") Войти

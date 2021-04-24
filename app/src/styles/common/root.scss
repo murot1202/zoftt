@@ -1,0 +1,15 @@
+$white: #fff;
+$btn: #F6514B;
+$header-color: #4D3592;
+$grey-title: #333333;
+$grey-text: #4f4f4f;
+
+$SedanSC: ('Regular', 400),('Bold', 700);
+             
+@each $name, $weight in $SedanSC {
+    @font-face {
+        font-family: 'SedanSC';
+        src: url(../fonts/SedanSC/SedanSC-#{$name}.woff2);
+        font-weight: $weight;
+    }
+}
